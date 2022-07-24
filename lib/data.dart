@@ -12,10 +12,3 @@ Future<dynamic> fetchData() async {
     throw Exception('Error');
   }
 }
-
-fetchedData() async {
-  var fetchedData = await fetchData();
-  for (int i = 0; i < 10; i++) {
-    return fetchedData[i]["address"]["street"];
-  }
-}
